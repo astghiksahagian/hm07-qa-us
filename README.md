@@ -6,7 +6,13 @@ Description: this project tests the validity and execution of API tests created 
 
 Technologies and Techniques: these tests were ran using the following technologies and methods:
 - VS CODE 
-- Node.js + pacakage manager
+- Node.js + node pacakage manager
+    - To install Node.js, download the appropriate version for your operating system from the official Node.js website: https://nodejs.org/en
+    -It is recommended to use Node.js v18. 
+    - Once installed, access the npm command-line tool, which you can use to manage packages and dependencies for the project.
+    - type "npm init --yes" on terminal to initialize npm.
+    - type "npm install jest" on terminal to install jest.
+    - When you are ready to start testing using npm, run the following code inside the VS Code terminal: npm init --yes
 - Github
 
 Running Tests:
