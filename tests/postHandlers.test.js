@@ -8,7 +8,7 @@ const requestBody = {
 }
 
 // status should be 200
-test('status should be 200', async () => {
+test('POST test 1 checks that the speedy deivery cost calculation returns a 200 status code', async () => {
 	let actualStatus;
     try {
 		const response = await fetch(`${config.API_URL}/speedy/v1/calculate`, {
@@ -28,7 +28,7 @@ test('status should be 200', async () => {
 
 
 // check that speedy delivery cost is greater than or equal to 0.
-test('check that speedy delivery cost is greater than or equal to 0', async () => {
+test('POST test 2 should return a speedy delivery cost is greater than or equal to 0', async () => {
     try {
 		const response = await fetch(`${config.API_URL}/speedy/v1/calculate`, {
 			method: 'POST',

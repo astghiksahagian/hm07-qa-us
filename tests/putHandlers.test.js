@@ -6,7 +6,7 @@ const requestBody = {
 }
 
 //status should be 200
-test('status should be 200', async () => {
+test('PUT test 1 checks that a price change will return a 200 status code.', async () => {
 	let actualStatus;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/products/2`, {
@@ -25,7 +25,7 @@ test('status should be 200', async () => {
 
 
 //Grocery item price should change
-test('Grocery item price should change', async () => {
+test('PUT test 2 should change the price of a grocery item', async () => {
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/products/2`, {
 			method: 'PUT',

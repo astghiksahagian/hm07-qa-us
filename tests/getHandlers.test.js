@@ -2,7 +2,7 @@
 const config = require('../config');
 
 //Couriers - Get a list of delivery types
-test('status should be 200', async () => {
+test('GET Test 1 checks that getting a list of delivery types will return a 200 status code', async () => {
 	let actualStatus;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/couriers`);
@@ -16,7 +16,7 @@ test('status should be 200', async () => {
 
 
 //Checking that number of delivery types is greater than 0
-test("check that number of delivery types is greater than 0", async () => {
+test("GET Test 2 should return a list of delivery types that will be greater than 0", async () => {
 	let response;
 	try {
 		response = await fetch(`${config.API_URL}/api/v1/couriers`);

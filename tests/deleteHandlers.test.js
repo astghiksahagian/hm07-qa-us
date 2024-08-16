@@ -2,7 +2,7 @@
 const config = require('../config');
 
 //status should be 200
-test('status should be 200', async () => {
+test('DELETE Test 1 checks that deleting an existing kit returns a 200 status code', async () => {
 	let actualStatus;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
@@ -17,7 +17,7 @@ test('status should be 200', async () => {
 
 
 //Deleting a kit using delete request
-test('Deleting the kit', async () => {
+test('DELETE Test 2 should delete an exisiting kit', async () => {
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
 			method: 'DELETE',
